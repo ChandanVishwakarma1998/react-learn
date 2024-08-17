@@ -26,12 +26,12 @@ function App() {
 
         <button 
         onClick={() => setEnableMultiselection(!enableMultiselection)}
-        >Enable Multiselect
+        >{enableMultiselection ? "Disable Multiselect":"Enable Multiselect" }
          </button>
         <div className="accrodion">
           { data && data.length > 0 ? (
           data.map((dataItem)=> (
-            <div className='Item'>
+            <div className="Item">
               <div className="title"
                onClick={
                 enableMultiselection 

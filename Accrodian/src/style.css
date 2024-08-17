@@ -15,25 +15,30 @@
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+ border-radius:10px;
  }
  .accrodion{
     width: 500px;
  }
- .item {
-    background: #614101;
+ .Item {  
+   display: flex;
+   flex-direction: column;
+   
+   background-color: rgb(121, 63, 63);
     margin-bottom: 10px;
     padding: 10px 20px;
+    border-radius: 10px;
   }
   
   .title {
-    color: #ffffff;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
     cursor: pointer;
   }
   
   .acc-content {
-    color: #ffffff;
+    color: #fff;
     height: auto;
   }
