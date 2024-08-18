@@ -1,9 +1,9 @@
-.main {
+.btn-conatiner {
         display:flex;
      }
 button {
-    padding: 10px 20px;
-    margin: 10px auto;
+    padding: 10px 20px ;
+    margin: 10px 10px;
     background-color: #007bff;
     color: rgb(245, 243, 243);
     border: none;
@@ -13,4 +13,15 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+.color-container{
+display:flex ;
+flex-direction: column; 
+justify-content:center ;
+align-Items : center;
+color:#fff;
+font-Size: 40px;
+font-Weight: 30px;
+margin-Top:50px;
+gap: 20px;
 }

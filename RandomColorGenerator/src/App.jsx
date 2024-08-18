@@ -39,24 +39,13 @@ function App() {
       height: "100vh",
       background: color ,
       }}>
-        <div className='main'>
+        <div className='btn-container'>
         <button onClick={()=> setTypeOfColor('hex')}>Create random HEX Color </button>
       <button onClick={()=>setTypeOfColor("rgb")}>Create random RGB Color </button>
       </div>
       <button onClick={typeOfColor === "hex" ? handleRandomHexColor:handleRandomRgbColor}>Create random Color </button>
     
-      <div
-       style={{
-        display:"flex",
-        flexDirection: 'column',
-        justifyContent:'center',
-        alignItems : 'center',
-        color:"#fff",
-        fontSize: "40px",
-        fontWeight: "30px",
-        marginTop:"50px",
-        gap: "20px",
-        }}> 
+      <div  className='color-container'>
         <h2>{typeOfColor === "rgb"  ? " RGB Color":"HEX Color"}
         </h2>
         <h3>{color}</h3>
