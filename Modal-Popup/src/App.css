@@ -1,0 +1,117 @@
+.ModalPopup{
+ display: flex;
+ width: 100%;
+ height:100vh;
+ justify-content: center;
+ align-items: center;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #bbe836;
+    animation-name: animateModal;
+    animation-duration: 0.5s;
+}
+
+.content{
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 0;
+    border: 2px solid black;
+    width: 70%;
+
+}
+.close-modal-icon{
+    cursor: pointer;
+    font-size: xx-large;
+    float: right;
+    font-weight: bold;
+    top: auto;
+}
+
+.header{
+    padding: 4px  16px;
+    background-color: #09ae00;
+    color: white;
+    text-align: center;
+    font-size:x-large;
+    animation-name: animateHeader;
+    animation-duration: 1s;
+    
+}
+
+.body{
+  padding:4px 16px;
+    height: 200px;
+    text-align: center;
+}
+.body div{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation-name: animateBody;
+    animation-duration: 2s;
+}
+
+.footer{
+        padding: 4px 16px;
+        background-color: #09ae00;
+        color: white ; 
+        text-align: center;
+        animation-name: animateFooter;
+        animation-duration: 3s;
+  
+      }
+
+      @keyframes animateHeader {
+        from {
+          top: -200px;
+          opacity: 0;
+        }
+      
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @keyframes animateFooter{
+        from {
+          bottom: -200px;
+          opacity: 0;
+        }
+      
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+      @keyframes animateBody {
+        from {
+          left: -200px;
+          opacity: 0;
+        }
+      
+        to {
+          left: 0;
+          opacity: 1;
+        }}
+        @keyframes animateMModal{
+            from {
+              right: -200px;
+              opacity: 0;
+            }
+          
+            to {
+              right: 0;
+              opacity: 1;
+            }
+          }
