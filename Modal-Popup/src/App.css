@@ -85,7 +85,7 @@
       }
       @keyframes animateFooter{
         from {
-          bottom: -200px;
+          top:200px;
           opacity: 0;
         }
       
@@ -101,17 +101,17 @@
         }
       
         to {
-          left: 0;
+          top: 0;
           opacity: 1;
         }}
-        @keyframes animateMModal{
+        @keyframes animateModal{
             from {
-              right: -200px;
+              left:200px;
               opacity: 0;
             }
           
             to {
-              right: 0;
+              top:0;
               opacity: 1;
             }
           }
