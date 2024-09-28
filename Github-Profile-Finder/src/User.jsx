@@ -6,7 +6,7 @@ function User({user}) {
 
     const createdDate = new Date(created_at)
   return (
-    <div className=' flex justify-center items-center p-10 '>
+    <div className=' flex flex-col justify-center items-center p-10 '>
         <div className=" flex justify-center border-1 border-black">
             <img src={avatar_url} alt="user"
             className=' rounded-full w-[50%]' />

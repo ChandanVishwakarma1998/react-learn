@@ -45,6 +45,7 @@ function App() {
    type="text"  
    name="searchByUsername" 
    onChange={(e) => setUserName(e.target.value)}
+   placeholder='Enter Github username'
    value={userName} />
    <button 
    className='bg-blue-300 hover:bg-blue-500 font-bold px-2 py-1 rounded-r-lg'
